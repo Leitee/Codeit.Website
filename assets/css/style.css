@@ -19,15 +19,32 @@
 /*===========================
     01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"); */
+@font-face {
+  font-family: 'Museo Slab';
+  src: local('Museo Slab 100'), local('Museo-Slab-100'),
+      url('../fonts/MuseoSlab-100.woff2') format('woff2'),
+      url('../fonts/MuseoSlab-100.woff') format('woff'),
+      url('../fonts/MuseoSlab-100.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Slab 900';
+  src: local('Museo Slab 900'), local('Museo-Slab-900'),
+      url('../fonts/MuseoSlab-900.woff2') format('woff2'),
+      url('../fonts/MuseoSlab-900.woff') format('woff'),
+      url('../fonts/MuseoSlab-900.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Museo Slab';
   color: #5A5872;
 }
 
@@ -70,24 +87,28 @@ video {
   vertical-align: middle;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: #2B2A3D;
-  margin: 0px;
+h1 {
+  font-family:'Museo Slab', sans-serif;
+  font-weight:100;
+  color: #000000;
+  margin: -29px;
+  
+}
+h2 {
+  font-family:'Museo Slab 900';
+  font-style:normal;
+  font-weight: bold;
+  color:#933314 ;
+  font-size: 76px;
+
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 96px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 76px;
 }
 
 h3 {
@@ -96,6 +117,8 @@ h3 {
 
 h4 {
   font-size: 22px;
+  font-family: 'Museo Slab';
+  color: #000000;
 }
 
 h5 {
@@ -146,11 +169,11 @@ p {
   cursor: pointer;
   z-index: 5;
   transition: all 0.4s ease-out 0s;
-  background-color: #E84E4E;
+  background-color: #005582;
 }
 
 .main-btn:hover {
-  background-color: #ff6b6b;
+  background-color:#007689;
   color: #fff;
 }
 
@@ -174,7 +197,9 @@ p {
 
 .section_title.section_title_2 .title,
 .section_title.section_title_2 p {
-  color: #fff;
+  color: rgb(12, 11, 11);
+  font-family:"Museo_slap_100", sans-serif;
+  font-weight:100;
 }
 
 /*===== All Preloader Style =====*/
@@ -251,7 +276,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #E84E4E #E84E4E #F9F9F9;
+  border-color:#007689 #007689 #F9F9F9;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -1138,7 +1163,7 @@ p {
 }
 
 .single_team .team_content .team_name a:hover {
-  color: #E84E4E;
+  color:#5A5872;
 }
 
 .single_team .team_content p {
@@ -1353,10 +1378,10 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 .single_form textarea {
   width: 100%;
   height: 55px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgb(0 0 0 / 12%);
   padding: 0 25px;
   font-size: 16px;
-  color: #fff;
+  color:#5A5872;
   background: none;
   transition: all 0.3s ease-out 0s;
 }
@@ -1376,7 +1401,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
     11.FOOTER css 
 ===========================*/
 .footer_area {
-  background-color: #E84E4E;
+  background-color: #00456e;
   padding-top: 15px;
   padding-bottom: 30px;
 }
