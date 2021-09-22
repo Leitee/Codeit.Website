@@ -41,11 +41,14 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
   font-family: 'Museo Slab';
   color: #5A5872;
+  
+
 }
 
 * {
@@ -85,6 +88,21 @@ img,
 svg,
 video {
   vertical-align: middle;
+}
+/* #lineas {
+  float: left;
+
+  
+} */
+
+#logo {
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: end;
 }
 
 h1 {
