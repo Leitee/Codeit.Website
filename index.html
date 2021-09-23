@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/tecla.png" type="image/png">
 
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -34,7 +34,9 @@
 </head>
 
 <body>
-    <div class="flex-container">
+    <section id="encabezado" >
+
+    <div class="flex-container" >
         <div style="flex-shrink: 350px;">
 
             <img id="lineas" src="assets/images/lineas.png" alt="blog">
@@ -46,23 +48,25 @@
         </div>
 
     </div>
+    </section>
 
 
 
     <!--====== BLOG PART START ======-->
 
-    <section id="section">
+    <section id="section"  >
         <!-- style="background-image: url(assets/images/fondo.jpg)" -->
-        <div class="container">
+        <div >
 
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="single_blog mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+            <div class="row blog_content">
+                <div class="col-lg-6 ">
+                    <div class="single_blog mt-30 wow fadeInUp " data-wow-duration="1.3s" data-wow-delay="0.2s">
 
-                        <div class="blog_content">
-                            <h1>We are under</h1>
-                            <h2 class="text-center">construction</h2>
+                        <div id="title">
+                            <div ><h1>We are under</h1></div>
+                            <div><h2 class="text-center">construction</h2></div>
+                     
 
                         </div>
                     </div> <!-- single blog -->
@@ -78,39 +82,6 @@
             <br>
 
             
-
-            <form id="contact-form" action="assets/contact.php" method="post" class="wow fadeInUp"
-                data-wow-duration="1.3s" data-wow-delay="0.4s">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="single_form">
-                            <input type="text" placeholder="Name" name="name" id="name" required>
-                        </div> <!-- single form -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single_form">
-                            <input type="email" placeholder="Email" name="email" id="email" required>
-                        </div> <!-- single form -->
-                    </div>
-
-                    <!-- <div class="col-lg-12">
-                    <div class="single_form">
-                        <textarea placeholder="Message" name="message" id="message" required></textarea>
-                    </div> 
-                </div> -->
-
-                    <p class="form-message"></p>
-
-                    <div class="col-lg-12">
-                        <div class="single_form text-center">
-                            <button class="main-btn" type="submit">GET IN TOUCH</button>
-
-                        </div> <!-- single form -->
-                    </div>
-
-                </div> <!-- row -->
-            </form>
-            <br>
         </div> <!-- container -->
     </section>
 
@@ -118,8 +89,42 @@
 
 
 
-    <!--====== FOOTER PART START ======-->
-
+    <section>
+        <div class="container " id="form">
+            <form  action="assets/contact.php" method="post" class="wow fadeInUp"
+            data-wow-duration="1.3s" data-wow-delay="0.4s">
+            <div class="row" id="contact-form">
+                <div class="col-lg-6">
+                    <div class="single_form">
+                        <input type="text" placeholder="Name" name="name" id="name" required>
+                    </div> <!-- single form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_form">
+                        <input type="email" placeholder="Email" name="email" id="email" required>
+                    </div> <!-- single form -->
+                </div>
+                
+                <!-- <div class="col-lg-12">
+                    <div class="single_form">
+                        <textarea placeholder="Message" name="message" id="message" required></textarea>
+                    </div> 
+                </div> -->
+                
+                <p class="form-message"></p>
+                
+                <div class="col-lg-12">
+                    <div class="single_form text-center">
+                        <button class="main-btn" type="submit">GET IN TOUCH</button>
+                        
+                    </div> <!-- single form -->
+                </div>
+                
+            </div> <!-- row -->
+        </form>
+    </div>
+</section>
+<!--====== FOOTER PART START ======-->
     <footer id="footer" class="footer_area">
         <div class="container">
             <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
