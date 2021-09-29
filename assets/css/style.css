@@ -32,6 +32,7 @@ body {
   height: 100vh;
  
 }
+
 #bg-container{
   background-image: url('../images/fondoteclas.jpg');
   height: 100%;
@@ -79,21 +80,22 @@ a {
   padding-right: 40px;
   padding-top: 90px;
   width: 90%;
-
-
 }
+
 #blog_content{
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
 
 }
+
 #form{
   padding-bottom: 20px;
   margin: auto;
   margin-top: auto;
  
 }
+
 #title{
   margin-left: 100px;
   margin-top: 100px;
@@ -161,11 +163,7 @@ h4 {
 }
 
 footer{
-  /* display: flex; */
   background-color: #00456e;
-  /* bottom: 0;
-  top: auto; */
-  /* height: 100px; */
   padding-top: 15px;
   padding-bottom: 30px;
   background-size: cover;
@@ -176,8 +174,11 @@ footer{
 /*===== All Section Title Style =====*/
 
 @media (max-width: 1920px) {
-  body {
+  html {
+    height: 100%;
+  }
 
+  body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,6 +187,7 @@ footer{
     background-image: url('../images/fondodifu.jpg');
   
   }
+
   footer{
     background-color: #00456e;
     margin-top: auto;
@@ -194,12 +196,15 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
   }
  
 }
 
 @media (max-width: 1224px) {
+  html {
+    height: 100%;
+  }
+
   body {
     background-position: center center;
     background-size: cover;
@@ -213,22 +218,26 @@ footer{
   #containerlogo {
     width: 90%;
   }
+
   #title {
     margin-left: 0px;
   }
+
   h2 {
     width: 80%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  html {
+    height: 100%;
+  }
+
   body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    background-image: url('../images/fondodifu.jpg');
   
   }
   
@@ -238,7 +247,7 @@ footer{
 
   h2 {
     font-size: 62px;
-    /* margin-right: 53px; */
+    
   }
   
   #teclas {
@@ -246,13 +255,22 @@ footer{
     width: 90%;
     display: none;
   }
+
   #subtitle {
     width: 80%;
+  }
+
+  #containerLogo {
+    width: 100%;
   }
 
 }
  
 @media (min-width:300px) and (max-width: 600px) {
+  html {
+    height: 100%;
+  }
+
   body {
     background-position: center center;
     background-size: cover;
@@ -269,11 +287,11 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+   
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 44px;
     margin-top: 10px;
     text-align: center;
     margin: 0px
@@ -282,8 +300,12 @@ footer{
   h2 {
     font-size: 35px;
     padding-top: 0px;
-    align-content: center;
-    /* margin-right: 53px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #section {
+    padding-top: 20%;
   }
 
   #teclados {
@@ -292,7 +314,7 @@ footer{
 
   #lineas {
     width: 100%;
-    height: 120%;
+    height: 90%;
   }
 
   #subtitle {
@@ -304,9 +326,13 @@ footer{
     margin-top: 0px;
   }
 
+  #containerLogo {
+    width: 190%;
+  }
+
   #logo {
     padding-right: 11px;
-    padding-top: 80px;
+    padding-top: 50px
   }
 
 }
@@ -317,21 +343,6 @@ footer{
 /*===========================
     10.CONTACT css 
 ===========================*/
-.contact_area {
-  position: relative;
-  z-index: 5;
-}
-
-.contact_area::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(43, 42, 61, 0.9);
-  z-index: -1;
-}
 
 p.form-message.success, p.form-message.error {
   font-size: 16px;
@@ -368,49 +379,13 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   border-color: #fff;
 }
 
-.single_form textarea {
-  height: 170px;
-  resize: none;
-  padding-top: 15px;
-}
 
 /*===========================
     11.FOOTER css 
 ===========================*/
-/* .footer_area {
-  background-color: #00456e;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  margin-top: auto;
-  display: table;
-} */
+
 .footer_social ul {
   margin-top: 16px;
-}
-
-.footer_menu ul li {
-  display: inline-block;
-  padding-top: 5px;
-}
-
-.footer_menu ul li + li {
-  margin-left: 30px;
-}
-
-@media (max-width: 767px) {
-  .footer_menu ul li + li {
-    margin-left: 15px;
-  }
-}
-
-.footer_menu ul li a {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease-out 0s;
 }
 
 .footer_menu ul li a:hover {
